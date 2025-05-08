@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        justify-items: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+    h2{       
+        grid-column: span 2;
+    }
+    .grill{
+        grid-column: span 2;
+        max-width: 1000px;
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,200px);
+
+        justify-content: center;
+        grid-gap:10px
+    }
+    li{
+        border-radius: 18px;
+        grid-column: span 1;
+        max-width: 200px;
+        height: 200px;
+        list-style: none;
+        background-color: #1a1717;
+        a{
+            color: #1a1717;
+        }
+        
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h2>CSS GRID</h2>
+        <div class="grill">
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+            <li><a href="#">items</a></li>
+        </div>
+    </div>
+</body>
+</html>

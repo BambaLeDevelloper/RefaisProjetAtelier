@@ -1,0 +1,56 @@
+:root{
+    --colorA :#FFC300;
+    --colorC : #821b63;
+    --colorB : #e033c9;
+}
+form{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    padding: 3%;
+    border-radius: 18px;
+    --fond: #046b8b;
+  background-color: var(--fond);
+}
+button{
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 100px;
+    height: 30px;
+    background-color: var(--colorA);
+    border-radius: 18px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--colorB);
+}
+input{
+    outline: none;
+    border-radius: 9px;
+    padding: 1.5%;
+    border: 1.2px solid var(--colorA);
+    width: 400px;
+}
+h2{
+    color: var(--colorA);
+    font-size: 23px;
+}
+@media screen and (max-width: 1030px) and (min-width:100px) {
+     form{
+        width:  90%;
+        height: 80%;
+        padding: 1% 2% 0% 2%;
+        
+        
+     }
+     input{
+        width: 90%;
+
+     }
+     button{
+       margin-top: 10%;
+        margin-bottom: -5%;
+        margin-left: 27%;
+     }
+}
