@@ -9,7 +9,7 @@ function estClique(id) {
       if (prenom.value.trim() === "" || nom.value.trim()==="" || tel.value.trim() ==="" || email.value.trim()==="") {
         alert("Veuillez remplir tous les champs !!!");
       } else {
-        document.writeln("tous les champs sont remplis ");
+        document.writeln("normalement tous les champs sont remplis ");
         return true;
       } 
     });
